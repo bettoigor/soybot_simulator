@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="soybot_simulator  ">
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    
+    <include>
+      <uri>model://sun</uri>
+    </include>
+ 
+    <include>
+      <uri>model://heightmap</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+ 
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0 0 50 0 1.55 0</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+
+
+</world>
+</sdf>

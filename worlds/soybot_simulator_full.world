@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="soybot_simulator  ">
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    
+    <include>
+      <uri>model://sun</uri>
+    </include>
+ 
+    <include>
+      <uri>model://heightmap</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+ 
+  <!-- Short plants  Curve-->
+ 
+     <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_1'</name>
+      <pose>-9.5 1 0 0 0 0</pose>
+    </include>
+ 
+     <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_2'</name>
+      <pose>-9.5 1.45 0 0 0 0</pose>
+    </include>
+    
+     <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_3'</name>
+      <pose>-9.5 1.90 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_4'</name>
+      <pose>-9.5 2.35 0 0 0 0</pose>
+    </include>
+ 
+    <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_5'</name>
+      <pose>-9.5 2.80 0 0 0 0</pose>
+    </include>
+
+ 
+     <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_6'</name>
+      <pose>-6.5 3.25 0 0 0 0</pose>
+    </include>
+
+
+
+  <!-- Short plants  Strainght line-->
+ 
+     <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_1'</name>
+      <pose>5.0 1.0 0 0 0 0</pose>
+    </include>
+ 
+     <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_2'</name>
+      <pose>5.0 1.45 0 0 0 0</pose>
+    </include>
+    
+     <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_3'</name>
+      <pose>5.0 1.90 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_4'</name>
+      <pose>5.0 2.35 0 0 0 0</pose>
+    </include>
+ 
+    <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_5'</name>
+      <pose>5.0 2.80 0 0 0 0</pose>
+    </include>
+
+     <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_6'</name>
+      <pose>5.0 3.25 0 0 0 0</pose>
+    </include>
+
+</world>
+</sdf>

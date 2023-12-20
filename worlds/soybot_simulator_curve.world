@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="soybot_simulator  ">
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    
+    <include>
+      <uri>model://sun</uri>
+    </include>
+ 
+    <include>
+      <uri>model://heightmap</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+ 
+  <!-- Short plants  Curve-->
+ 
+     <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_1'</name>
+      <pose>-12.00 1.575 0 0 0 0</pose>
+    </include>
+ 
+     <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_2'</name>
+      <pose>-12.00 1.125 0 0 0 0</pose>
+    </include>
+    
+     <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_3'</name>
+      <pose>-12.00 0.675 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_4'</name>
+      <pose>-12.00 0.225 0 0 0 0</pose>
+    </include>
+ 
+    <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_5'</name>
+      <pose>-12.00 -0.225 0 0 0 0</pose>
+    </include>
+
+ 
+     <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_6'</name>
+      <pose>-12.00 -0.675 0 0 0 0</pose>
+    </include>
+ 
+     <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_7'</name>
+      <pose>-12.00 -1.125 0 0 0 0</pose>
+    </include>
+    
+     <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_8'</name>
+      <pose>-12.00 -1.575 0 0 0 0</pose>
+    </include>
+
+<!--
+    <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_9'</name>
+      <pose>-8.0 4.6 0 0 0 0</pose>
+    </include>
+ 
+    <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_10'</name>
+      <pose>-8.0 5.05 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_11'</name>
+      <pose>-8.0 5.5 0 0 0 0</pose>
+    </include>
+ 
+    <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_12'</name>
+      <pose>-8.0 5.95 0 0 0 0</pose>
+    </include>
+
+      <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_13'</name>
+      <pose>-8.0 6.4 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_14'</name>
+      <pose>-8.0 6.85 0 0 0 0</pose>
+    </include>
+ 
+    <include>
+      <uri>model://soybean_curve</uri>
+      <name>'soybean_curve_15'</name>
+      <pose>-8.0 7.3 0 0 0 0</pose>
+    </include>
+-->
+
+
+</world>
+</sdf>

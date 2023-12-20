@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="soybot_simulator  ">
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    
+    <include>
+      <uri>model://sun</uri>
+    </include>
+ 
+    <include>
+      <uri>model://heightmap</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+ 
+  <!-- Short plants  Strainght line-->
+ 
+     <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_1'</name>
+      <pose>-8.0 -2 0 0 0 0</pose>
+    </include>
+ 
+     <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_2'</name>
+      <pose>-8.0 -2.45 0 0 0 0</pose>
+    </include>
+    
+     <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_3'</name>
+      <pose>-8.0 -2.90 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_4'</name>
+      <pose>-8.0 -3.35 0 0 0 0</pose>
+    </include>
+ 
+    <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_5'</name>
+      <pose>-8.0 -3.80 0 0 0 0</pose>
+    </include>
+
+     <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_6'</name>
+      <pose>-8.0 -4.25 0 0 0 0</pose>
+    </include>
+ 
+     <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_7'</name>
+      <pose>-8.0 -4.70 0 0 0 0</pose>
+    </include>
+    
+     <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_8'</name>
+      <pose>-8.0 -5.15 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_9'</name>
+      <pose>-8.0 -5.6 0 0 0 0</pose>
+    </include>
+ 
+    <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_10'</name>
+      <pose>-8.0 -6.05 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_11'</name>
+      <pose>-8.0 -6.5 0 0 0 0</pose>
+    </include>
+ 
+    <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_12'</name>
+      <pose>-8.0 -6.95 0 0 0 0</pose>
+    </include>
+
+      <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_13'</name>
+      <pose>-8.0 -7.4 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_14'</name>
+      <pose>-8.0 -7.85 0 0 0 0</pose>
+    </include>
+ 
+    <include>
+      <uri>model://soybean_line</uri>
+      <name>'soybean_line_15'</name>
+      <pose>-8.0 -8.3 0 0 0 0</pose>
+    </include>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0 0 20 0 1.55 1.55</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+
+
+</world>
+</sdf>
