@@ -14,64 +14,109 @@
       <uri>model://heightmap</uri>
       <pose>0 0 0 0 0 0</pose>
     </include>
+
+    <!-- Land marks -->
  
-  <!-- Short plants  Curve-->
+    <include>
+      <uri>model://mark</uri>
+      <name>'mark_1'</name>
+      <pose>-12 -0.9 0 0 0 0</pose>
+    </include>
+
+ 
+    <include>
+      <uri>model://mark</uri>
+      <name>'mark_2'</name>
+      <pose>-12 0 0 0 0 0</pose>
+    </include>
+
+ 
+    <include>
+      <uri>model://mark</uri>
+      <name>'mark_3'</name>
+      <pose>-12 0.9 0 0 0 0</pose>
+    </include>
+
+ 
+    <include>
+      <uri>model://mark</uri>
+      <name>'mark_4'</name>
+      <pose>14 -0.5 0 0 0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://mark</uri>
+      <name>'mark_5'</name>
+      <pose>14 0.4 0 0 0 0</pose>
+    </include>
+
+ 
+    <include>
+      <uri>model://mark</uri>
+      <name>'mark_6'</name>
+      <pose>14 1.3 0 0 0 0</pose>
+    </include>
+
+
+  <!-- Sort plants  Curve-->
  
      <include>
       <uri>model://soybean_curve</uri>
       <name>'soybean_curve_1'</name>
-      <pose>-12.00 1.575 0 0 0 0</pose>
+      <pose>-12.00 1.2 0 0 0 0.0</pose>
     </include>
  
      <include>
       <uri>model://soybean_curve</uri>
       <name>'soybean_curve_2'</name>
-      <pose>-12.00 1.125 0 0 0 0</pose>
+      <pose>-12.00 0.9 0 0 0 0.0</pose>
     </include>
     
      <include>
       <uri>model://soybean_curve</uri>
       <name>'soybean_curve_3'</name>
-      <pose>-12.00 0.675 0 0 0 0</pose>
+      <pose>-12.00 0.6 0 0 0 0.0</pose>
     </include>
 
     <include>
       <uri>model://soybean_curve</uri>
       <name>'soybean_curve_4'</name>
-      <pose>-12.00 0.225 0 0 0 0</pose>
+      <pose>-12.00 0.3 0 0 0 0.0</pose>
     </include>
  
     <include>
       <uri>model://soybean_curve</uri>
       <name>'soybean_curve_5'</name>
-      <pose>-12.00 -0.225 0 0 0 0</pose>
+      <pose>-12.00 0.0 0 0 0 0.0</pose>
     </include>
 
  
      <include>
       <uri>model://soybean_curve</uri>
       <name>'soybean_curve_6'</name>
-      <pose>-12.00 -0.675 0 0 0 0</pose>
+      <pose>-12.00 -0.3 0 0 0 0.0</pose>
     </include>
  
      <include>
       <uri>model://soybean_curve</uri>
       <name>'soybean_curve_7'</name>
-      <pose>-12.00 -1.125 0 0 0 0</pose>
+      <pose>-12.00 -0.6 0 0 0 0.0</pose>
     </include>
     
      <include>
       <uri>model://soybean_curve</uri>
       <name>'soybean_curve_8'</name>
-      <pose>-12.00 -1.575 0 0 0 0</pose>
+      <pose>-12.00 -0.9 0 0 0 0.0</pose>
     </include>
 
-<!--
     <include>
       <uri>model://soybean_curve</uri>
       <name>'soybean_curve_9'</name>
-      <pose>-8.0 4.6 0 0 0 0</pose>
+      <pose>-12.00 -1.2 0 0 0 0.0</pose>
     </include>
+
+<!--
  
     <include>
       <uri>model://soybean_curve</uri>

@@ -125,7 +125,6 @@ def run():
 max_vel = float(sys.argv[1])
 max_steer = float(sys.argv[2])
 joyCommand = Joy()
-bridge = CvBridge()
 
 vel = 0
 steer = 0

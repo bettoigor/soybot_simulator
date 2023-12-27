@@ -50,3 +50,20 @@ where ```image_topic``` is the desired topic.
 
 ![Configurator](/doc/soybot_model_4.png)
 
+## Selecting world and robot options
+Using the launch file parameters is possible to define a specific world and the 
+robot position and orientation. The following parameters are available:\
+```world_name```: name of .world file. Default value is ```soybot_simulator_curve.world```;
+```teleop```: initializes the teleoperation node. Default value is ```true```;\
+### Robot initial position and orientation
+Each value are used to define the position ```(x,y,z)``` 
+in meters, and the orientation ```(Row, Pitch, Yaw)``` in radians.
+Default values are:
+```	
+<arg name="x" default="-12"/>
+<arg name="y" default="0"/>
+<arg name="z" default="0.5"/>
+<arg name="R" default="0"/>
+<arg name="P" default="0"/>
+<arg name="Y" default="0.45"/>
+```

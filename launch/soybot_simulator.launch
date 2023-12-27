@@ -1,31 +1,46 @@
 <launch>
 
-   
+	<arg name="world_name" default="soybot_simulator_curve.world"/>
+	<arg name="teleop" default="true"/> 
+	<arg name="x" default="-12"/>
+	<arg name="y" default="0"/>
+	<arg name="z" default="0.5"/>
+	<arg name="R" default="0"/>
+	<arg name="P" default="0"/>
+	<arg name="Y" default="0.45"/>
+
+	
+    
     <include 
     	file="$(find gazebo_ros)/launch/empty_world.launch">
-	
-	<arg 
-		name="world_name" 
-		value="$(find soybot_simulator)/worlds/soybot_simulator_curve.world"/>
-		<!--value="$(find soybot_simulator)/worlds/soybot_simulator_straight.world"/-->
-		<!--value="$(find soybot_simulator)/worlds/soybot_simulator_simple.world"/-->	
-		<!--value="$(find soybot_simulator)/worlds/soybot_simulator_full.world"/-->
-
+    	
+		<arg 
+			name="world_name" 
+			value="$(find soybot_simulator)/worlds/$(arg world_name)"/>
     
     </include>
-
     
     <arg 
     	name="model" 
     	default="$(find soybot_model)/urdf/soybot.urdf"/>
+
 	<param 
 		name="robot_description" 
 		command="$(find xacro)/xacro $(arg model)" />
+
 	<node 
 		name="spawn_model" 
 		pkg="gazebo_ros" 
 		type="spawn_model" 
-		args="-param robot_description -urdf -x -5 -y -4 -z 1 -model soybot" />
+		args="-param robot_description -urdf -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg R) -P $(arg P) -Y $(arg Y) -model soybot" />
 		
+	<group if="$(arg teleop)">
+
+		<include
+    		file="$(find soybot_simulator)/launch/teleop_joy.launch"/>
+
+	</group>
+	
+	
 </launch>
 

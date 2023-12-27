@@ -1,8 +1,8 @@
 <launch>
 
 <!-- Initial Paramteres -->
-	<arg name="max_vel" default="1."/>
-	<arg name="max_steer" default="1."/>
+	<arg name="max_lin" default="1."/>
+	<arg name="max_ang" default="1."/>
 
 
 <!-- joy node -->
@@ -21,12 +21,14 @@
 <!-- Teleoperete node -->
 	<node name="teleop_joy" 
     	  pkg="soybot_simulator" 
-		  type="teleopJoy.py"
-		  args="$(arg max_vel) $(arg max_steer)"
-		  output='screen'>
+		  type="teleop_main.py"
+		  args="$(arg max_lin) $(arg max_ang)">
+		  <!--output='screen'-->
 		    
 		<remap from="cmd_vel" to="/soybot/cmd_vel"/>
 		<remap from="joy" to="/soybot/joy"/>
+		<remap from="restart" to="/visual_servoing/reset"/>
+		<remap from="pub_visual" to="/visual_servoing/start"/>
 
 	</node>
 
